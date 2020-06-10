@@ -1,0 +1,14 @@
+<p>{{result}}</p>
+<h2>DTL (django template language</h2>
+
+<!-- 두개가 다르다 -->
+{# 이게 DTL 주석 #}
+{% comment %}
+여기는 전부
+출력이 안됨 (개발자코드에도 안나옴)
+여러줄 주석
+{% endcomment %}
+
+{% for num in result %}
+<p>{{ num }}</p>
+{% endfor %}
